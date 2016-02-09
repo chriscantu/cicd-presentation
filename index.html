@@ -47,7 +47,8 @@
 						<li>Reduce Errors</li>
 						<li>Empower Teams</li>
 						<li>Increase Confidence in Deployments</li>
-						<li>Make Deployments More Flexibile</li>
+						<li>Make Deployments More Flexible</li>
+						<li>Iterate Quickly</li>
 					</ul>
 				</section>
 				<section>
@@ -55,7 +56,7 @@
 					<ul>
 						<li>Releases must be repeatable & reliable</li>
 						<li>Automate everything</li>
-						<li>Everything in source control</li>
+						<li>Everything in version control*</li>
 						<li>Done means released</li>
 						<li>Build Quality In</li>
 						<li>Everyone is responsible for the release</li>
@@ -67,7 +68,7 @@
 					<ul>
 						<li>Deploying Software Manually</li>
 						<li>Only deploying to a production-like environment after development is complete</li>
-						<li>Manual Configuration of production environments</li>
+						<li>Any manual modifications (configuration, data, etc) of production environments</li>
 					</ul>
 				</section>
 				<section>
@@ -75,7 +76,7 @@
 						<ul style="font-size:0.7em">
 							<li>Make every change trigger a CI build, with a testing phase included</li>
 							<li>Make your feedback loops as short as possible to enact change more quickly</li>
-							<li>Prioritize feedback to act on it right away</li>
+							<li>Prioritize fixing failures in the pipeline right away</li>
 							<li>If something is painful, do it more often</li>
 						</ul>
 				</section>
@@ -83,17 +84,19 @@
 					<h2>Best Practices (Continued)</h2>
 						<ul style="font-size:0.7em">
 							<li>Build artifact only once</li>
-							<li>Keep everything in version control</li>
-							<li>Don't check in code if it's going to break the build</li>
+							<li>Keep everything in version control*</li>
+							<li>Integrate Frequently</li>
+							<li>Only check in working code</li>
 							<li>Same delivery mechanism for every environment</li>
 						</ul>
 				</section>
 				<section>
 					<h2>Best Practices (Continued)</h2>
 						<ul style="font-size:0.7em">
-							<li>Smoke test deployments</li>
+							<li>Smoke test production deployments (Critical Path)</li>
 							<li>Run tests in a CI server</li>
-							<li>If anything fails, stop the line</li>
+							<li>If anything fails in master, stop the line</li>
+							<li>If anything fails in feature, drop the line</li>
 							<li>Claim broken builds</li>
 							<li>Don't go home with a broken build</li>
 						</ul>
@@ -138,7 +141,16 @@
 					<h2>Database Management</h2>
 				</section>
 				<section>
+					<h2>Security Testing</h2>
+				</section>
+				<section>
 					<h2>Artifact Management</h2>
+				</section>
+				<section>
+					<h2>Phoenix Server (Immutable Server)</h2>
+					<ul>
+						<li>Blue Green Deployments</li>
+					</ul>
 				</section>
 			</div>
 		</div>
