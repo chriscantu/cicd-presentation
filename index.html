@@ -62,7 +62,7 @@
 						<li>Improve continuously</li>
 					</ul>
 				</section>
-				<section data-markdown>
+				<section>
 					<h2>Anti-patterns</h2>
 					<ul>
 						<li>Deploying Software Manually</li>
@@ -73,9 +73,9 @@
 				<section>
 					<h2>Best Practices</h2>
 						<ul style="font-size:0.7em">
-							<li>Make every change trigger the feedback process</li>
-							<li>Make you feedback loops as short as possible</li>
-							<li>Prioritize feedback to act on it quickly</li>
+							<li>Make every change trigger a CI build, with a testing phase included</li>
+							<li>Make your feedback loops as short as possible to enact change more quickly</li>
+							<li>Prioritize feedback to act on it right away</li>
 							<li>If something is painful, do it more often</li>
 						</ul>
 				</section>
@@ -114,11 +114,15 @@
 					</h2>
 					<img src="images/ReleasePipeline.png" style="background: #fff;" width="50%" />
 				</section>
-				<section data-markdown>
+				<section>
 					<h2>Automated Testing</h2>
 					<ul>
 						<li>Paramount to effective CI/CD</li>
-						<li>Drastically reduce feedback loops</li>
+						<li>Drastically reduce feedback loops
+							<ul>
+								<li>Automated tests can provide consistent feedback in minutes or even seconds instead of hours or days</li>
+							</ul>
+						</li>
 						<li>Minimize manual work</li>
 					</ul>
 				</section>
