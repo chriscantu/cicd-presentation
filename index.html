@@ -31,59 +31,95 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-markdown>
-					###Continuous Integration Continuous Delivery
+				<section>
+					<h2>Continuous Integration Continuous Delivery</h2>
 
-					Presented by [Chris Cantu](https://twitter.com/chriscantu") & [Vince Montalbano](http://vincemontalbano.com)
+					<p>Presented by <a href="https://twitter.com/chriscantu">Chris Cantu</a> & <a href="http://www.dev9.com">Vince Montalbano</a></p>
 				</section>
-				<section data-markdown>
-					###Based on
-					![Continuous Delivery](images/continuousDelivery.jpg)
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## Fundamentals
-						* Releases must be repeatable & reliable <!-- .element: class="fragment" -->
-						* Automate everything <!-- .element: class="fragment" -->
-						* Everything in source control <!-- .element: class="fragment" -->
-						* Done means released <!-- .element: class="fragment" -->
-						* Build Quality In <!-- .element: class="fragment" -->
-						* Everyone is responsible for the release <!-- .element: class="fragment" -->
-						* Improve continuously <!-- .element: class="fragment" -->
-					</script>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## AntiPatterns
-						* Deploying Software Manually <!-- .element: class="fragment" -->
-						* Only deploying to a production-like environment after development is complete <!-- .element: class="fragment" -->
-						* Manual Configuration of production environments <!-- .element: class="fragment" -->
-					</script>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## Best Practices
-						* Make every change trigger the feedback process <!-- .element: class="fragment" -->
-						* Make you feedback loops as short as possible  <!-- .element: class="fragment" -->
-						* Prioritize feedback to act on it quickly  <!-- .element: class="fragment" -->
-						* If something is painful, do it more often  <!-- .element: class="fragment" -->
-						* Keep everything in version control  <!-- .element: class="fragment" -->
-						* Don't check in code if it's going to break the build  <!-- .element: class="fragment" -->
-						* Run tests in a CI server  <!-- .element: class="fragment" -->
-						* Don't go home with a broken build  <!-- .element: class="fragment" -->
-						* Claim broken builds  <!-- .element: class="fragment" -->
-						* Build artifact only once <!-- .element: class="fragment" -->
-						* Same delivery mechanism for every environment <!-- .element: class="fragment" -->
-						* Smoke test deployments <!-- .element: class="fragment" -->
-						* If anything fails, stop the line <!-- .element: class="fragment" -->
-					</script>
+				<section>
+					<h2>Continuous Delivery</h2>
+					<img src="images/continuousDelivery.jpg" style="background: #fff;" height="50%" />
 				</section>
 				<section>
 					<h2>Benefits</h2>
 					<ul>
-						<li>Empower Teams</li>
+						<li>Solve Problems Quickly</li>
 						<li>Reduce Errors</li>
+						<li>Empower Teams</li>
+						<li>Increase Confidence in Deployments</li>
 						<li>Make Deployments More Flexibile</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Fundamentals</h2>
+					<ul>
+						<li>Releases must be repeatable & reliable</li>
+						<li>Automate everything</li>
+						<li>Everything in source control</li>
+						<li>Done means released</li>
+						<li>Build Quality In</li>
+						<li>Everyone is responsible for the release</li>
+						<li>Improve continuously</li>
+					</ul>
+				</section>
+				<section data-markdown>
+					<h2>Anti-patterns</h2>
+					<ul>
+						<li>Deploying Software Manually</li>
+						<li>Only deploying to a production-like environment after development is complete</li>
+						<li>Manual Configuration of production environments</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Best Practices</h2>
+						<ul style="font-size:0.7em">
+							<li>Make every change trigger the feedback process</li>
+							<li>Make you feedback loops as short as possible</li>
+							<li>Prioritize feedback to act on it quickly</li>
+							<li>If something is painful, do it more often</li>
+						</ul>
+				</section>
+				<section>
+					<h2>Best Practices (Continued)</h2>
+						<ul style="font-size:0.7em">
+							<li>Build artifact only once</li>
+							<li>Keep everything in version control</li>
+							<li>Don't check in code if it's going to break the build</li>
+							<li>Same delivery mechanism for every environment</li>
+						</ul>
+				</section>
+				<section>
+					<h2>Best Practices (Continued)</h2>
+						<ul style="font-size:0.7em">
+							<li>Smoke test deployments</li>
+							<li>Run tests in a CI server</li>
+							<li>If anything fails, stop the line</li>
+							<li>Claim broken builds</li>
+							<li>Don't go home with a broken build</li>
+						</ul>
+				</section>
+				<section>
+					<h2>
+						<a href="images/DevelopmentBuildPipeline.png" target="_blank">
+							Development Build Pipeline
+						</a>
+					</h2>
+					<img src="images/DevelopmentBuildPipeline.png" style="background: #fff;" width="50%" />
+				</section>
+				<section>
+					<h2>
+						<a href="images/ReleasePipeline.png" target="_blank">
+							Release Pipeline
+						</a>
+					</h2>
+					<img src="images/ReleasePipeline.png" style="background: #fff;" width="50%" />
+				</section>
+				<section data-markdown>
+					<h2>Automated Testing</h2>
+					<ul>
+						<li>Paramount to effective CI/CD</li>
+						<li>Drastically reduce feedback loops</li>
+						<li>Minimize manual work</li>
 					</ul>
 				</section>
 				<section>
@@ -99,12 +135,6 @@
 				</section>
 				<section>
 					<h2>Artifact Management</h2>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## Practices
-						
-					</script>
 				</section>
 			</div>
 		</div>
